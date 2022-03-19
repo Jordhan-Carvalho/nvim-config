@@ -7,4 +7,5 @@ require "jpconfig.lsp"
 require "jpconfig.telescope"
 require "jpconfig.treesitter"
 require "jpconfig.autopairs"
-
+require "jpconfig.comment"
+require "jpconfig.gitsigns"
