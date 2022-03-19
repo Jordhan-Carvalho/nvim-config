@@ -1,5 +1,5 @@
 # Based on
-https://github.com/LunarVim/Neovim-from-scratch
+https://github.com/LunarVim
 
 - Custom keymaps and vim options;
 - Custom themes;

@@ -110,6 +110,7 @@ cmp.setup {
   },
   -- The order is important... its the order that its displayed
   sources = {
+    { name = "nvim_lsp" },
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
