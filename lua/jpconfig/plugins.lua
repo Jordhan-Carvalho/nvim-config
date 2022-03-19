@@ -45,6 +45,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Automatic curl braces and stuff like that
+  use "numToStr/Comment.nvim" -- Easily comment stuff with gcc, gbc (block wide line wise)
 
   -- ColorSchemes
   use "morhetz/gruvbox" -- Color theme
@@ -76,7 +77,8 @@ return packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
-  use "p00f/nvim-ts-rainbow"
+  use "p00f/nvim-ts-rainbow" -- Different colors for brackets
+  use 'JoosepAlviste/nvim-ts-context-commentstring' -- Support for jsx comments with gcc and gbc
 
 
   -- Automatically set up your configuration after cloning packer.nvim
