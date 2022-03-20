@@ -46,6 +46,12 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Automatic curl braces and stuff like that
   use "numToStr/Comment.nvim" -- Easily comment stuff with gcc, gbc (block wide line wise)
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    }
+  } -- Nvim tree file explorer
 
   -- ColorSchemes
   use "morhetz/gruvbox" -- Color theme
