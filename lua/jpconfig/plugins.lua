@@ -52,10 +52,14 @@ return packer.startup(function(use)
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     }
   } -- Nvim tree file explorer
-  -- using packer.nvim
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'} -- Buffers manager
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  } -- status bar
+  use "akinsho/toggleterm.nvim"
 
-  -- ColorSchemes
+  -- ColorSchemes --
   use "morhetz/gruvbox" -- Color theme
   use "rakr/vim-one" -- Color Theme
   use "lifepillar/vim-solarized8" -- Color theme
