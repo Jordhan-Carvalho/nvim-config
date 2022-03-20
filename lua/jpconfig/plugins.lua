@@ -52,6 +52,8 @@ return packer.startup(function(use)
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     }
   } -- Nvim tree file explorer
+  -- using packer.nvim
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'} -- Buffers manager
 
   -- ColorSchemes
   use "morhetz/gruvbox" -- Color theme
@@ -74,6 +76,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
