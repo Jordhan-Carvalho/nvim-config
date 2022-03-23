@@ -26,6 +26,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "d", '"_d', opts) -- So the delete dont yank anything
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -39,7 +40,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -58,6 +59,7 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "p", '"_dP', opts)
+keymap("x", "d", '"_d', opts) -- So the delete dont yank anything
 
 -- Terminal --
 -- Better terminal navigation
